@@ -2,7 +2,7 @@ import streamlit as st
 import os
 from werkzeug.utils import secure_filename
 import requests
-import json
+
 
 st.set_page_config(page_title="BEPC-JobSift", page_icon="static/logo.png", layout='wide')
 import base64
