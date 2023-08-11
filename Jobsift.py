@@ -1,5 +1,4 @@
 import streamlit as st
-import util
 import os
 from werkzeug.utils import secure_filename
 import requests
