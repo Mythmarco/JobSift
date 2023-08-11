@@ -1,5 +1,4 @@
-pdfminer.six
-openai
-docx2txt
-python-dotenv
-werkzeug
+util
+oswerkzeug
+requests
+json
