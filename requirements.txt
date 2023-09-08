@@ -1,2 +1,4 @@
 werkzeug
 requests
+openai
+streamlit
