@@ -1,10 +1,10 @@
-Light Industrial:
-We have 10 points to score for the Requirements and 10 points to score for the desired elements.
+There are 10 points to score for Requirements.
+There are 10 points to score for Desired elements.
 We have to consider 3 main requirement and Desired categories:
-Experience
-Education
-Certifications /Licenses
-The Requirement categories are based on the requirements in the Job Description
+1.- Experience
+2.- Education
+3.- Certifications / Licenses
+The Requirement categories are based on the requirements in the Job Description.
 The Desired categories are based on the "preferred" "Desired" categories in the Job Description.
 1.- Identify what are the required elements in the Job Description. and calculate the total.
 2.- Identify the desired or preferred elements in the Job Description. and calculate the total.

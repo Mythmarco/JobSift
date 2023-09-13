@@ -13,7 +13,7 @@ Usage
 To run the app, navigate to the application's directory and execute the following command:
 
 Copy code
-```streamlit run resume_styler.py```
+```py -m streamlit run jobsift.py```
 
 The application will then be accessible in your web browser at http://localhost:8501.
 
