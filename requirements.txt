@@ -3,3 +3,4 @@ requests
 openai
 streamlit
 pandas
+python-dotenv 

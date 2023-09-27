@@ -54,6 +54,7 @@ if st.button('Evaluate Resume'):
     st.markdown(transformed_response[0], unsafe_allow_html=True)
     st.subheader(f"Preferences Rating : {score_summary['desired_elements_rating']}/10")
     st.markdown(transformed_response[1], unsafe_allow_html=True)
+    st.markdown(job_description, unsafe_allow_html=True)
 
 # Footer
 st.markdown("""

@@ -1,9 +1,11 @@
 import os
 import openai
 import json
+from dotenv import load_dotenv 
 from functions.functions import prompt_function
 
-openai.api_key = os.getenv('openai.api_key')
+load_dotenv()
+openai.api_key=os.getenv("openai.api_key")
 
 def calculate_score(job_description, candidate_resume, job_type): # api call function to chatgpt
 
