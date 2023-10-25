@@ -1,17 +1,12 @@
-There are 10 points to score for Requirements.
-There are 10 points to score for Desired elements.
-We have to consider 3 main requirement and Desired categories:
+We have to consider 3 Required elements and Desired elements categories:
 1.- Experience
 2.- Education
-3.- Certifications / Licenses
-The Requirement categories are based on the requirements in the Job Description.
-The Desired categories are based on the "preferred" "Desired" categories in the Job Description.
-1.- Identify what are the required elements in the Job Description. and calculate the total.
-2.- Identify the desired or preferred elements in the Job Description. and calculate the total.
-3.- For the requirements Education requirements will take 7 points. Then for the rest of the categories required the points per category will  be calculated : 3 / (the total number of required categories - 1) 
-Because we are removing Education from the total number of categories. as an example if there are requirements for all categories then the ppc assignment is Education:7, Education: 1.5, Certifications/license:1.5, because 3/2 =1.5  If there is only requirement for Education and Experience, then the ppc assignment is: Education:7, Experience:3, because 3/1=1. 
-3.1 For the Desired or Prefered divide 10 / total number of categories and assign the result as the points per category (ppc). example: if there are desired categories for Experience, education and certifications/licenses, then the calculation would be 10/3 and the ppc assignment will be: Education:3.3, Experience:3.3, Certifications/License:3.3.
-4.- Check the Resume and review if Resume complies with the requirements for each of the categories, then if it complies assign the points per category to each of the categories, if it does not comply give 0 points for that category, if it partially complies, give 1/2 of the points per category and so on. 
-5.- In the end add up all of the scores for each category and provide the final result as the Requirement Scoring. repeat step 4 and 5 for Desired and calculate the final result as Preferences Scoring. 
-6.- Create a table where you list the Required categories, the score you gave and the explanation why you gave that score. then Show the total at the end of the table titled Requirements Score, In another table repeat this step 6 for Preferences Score.
-7.- Start the output with the title "Industrial Job Score:"
+3.- Certifications /Licenses
+
+The Requirement categories are based on what is listed as "Required", "Requirements ",or "Must have" in the Job Description.
+The Desired categories are based on the "bonus if", "Looking for","Plus if" ,"We value if", "Ideal to have" , "preferred", "Desired" categories in the Job Description.
+
+1.- Identify what are the required elements in the Job Description, mark which ones are required and calculate the total for each category, the minimum score is 0 and the maximun is 10.
+2.- Identify the desired or preferred elements in the Job Description, mark which ones are required and calculate the total for each category, the minimum score is 0 and the maximun is 10.
+3.- Check the Resume and review if Resume complies with the requirements for each of the categories, then if it complies assign the points per category to each of the categories, if it does not comply give 0 points for that category, if it partially complies, give 1/2 of the points per category and so on.
+4.- Determine if the category is measurable by checking if the job description is listing any preferred or required categories, return true if the categories are relevant to the job description and false if they are not. 

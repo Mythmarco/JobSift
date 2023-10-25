@@ -44,17 +44,17 @@ if st.button('Evaluate Resume'):
 
     transformed_response = transform_response( #transform the response arrays into html tables
       score_summary['requirements_table'],
-      score_summary['desired_elements_table']
+      score_summary['desired_elements_table'],
+      job_type
     )
     
     # Display Results
     st.markdown("## Viability Summary:")
     st.markdown(score_summary['viability_summary'], unsafe_allow_html=True)
-    st.subheader(f"Requirements Rating: {score_summary['requirements_rating']}/10") 
-    st.markdown(transformed_response[0], unsafe_allow_html=True)
-    st.subheader(f"Preferences Rating : {score_summary['desired_elements_rating']}/10")
-    st.markdown(transformed_response[1], unsafe_allow_html=True)
-    st.markdown(job_description, unsafe_allow_html=True)
+    st.subheader(f"Requirements Rating: {transformed_response['requirements_rating']}/10") 
+    st.markdown(transformed_response['requirements_table'], unsafe_allow_html=True)
+    st.subheader(f"Preferences Rating : {transformed_response['preferences_rating']}/10")
+    st.markdown(transformed_response['desired_elements_table'], unsafe_allow_html=True)
 
 # Footer
 st.markdown("""
