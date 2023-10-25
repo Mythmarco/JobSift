@@ -7,7 +7,7 @@ from functions.functions_professional import prompt_p_function
 
 
 load_dotenv()
-openai.api_key=os.getenv("openai.api_key")
+OPENAI_API_KEY=os.getenv("OPENAI_API_KEY")
 
 def calculate_score(job_description, candidate_resume, job_type): # api call function to chatgpt
 
