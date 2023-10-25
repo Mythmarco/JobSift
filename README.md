@@ -29,9 +29,10 @@ Compares the two documents and generates a summary of the candidate's viability 
 ## Note
 This app is not intended to be used for any other purpose than to demonstrate the capabilities of the BEPC API and GPT 3.5. It is not intended to be used in a production environment.
 
-## Author
+## Authors
 
 - [Marco Saenz]((https://github.com/Mythmarco))
+- [Javier Avalos]((https://github.com/javieravalosbiz))
 
 ## License
 
