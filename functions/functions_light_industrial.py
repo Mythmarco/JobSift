@@ -15,7 +15,7 @@ prompt_li_function = [
             "education":{ # REQUIRED EDUCATION
               "type": "object",
               "properties": {
-                "required": {
+                "measurable": {
                   "type": "boolean",
                   "description": "If the job description states that education is needed, mark this as true.",
                 },
@@ -33,7 +33,7 @@ prompt_li_function = [
             "Experience": { # REQUIRED EXPERIENCE
               "type": "object",
               "properties": {
-                "required": {
+                "measurable": {
                   "type": "boolean",
                   "description": "If the job description states that experience is needed, mark this as true.",
                 },
@@ -51,7 +51,7 @@ prompt_li_function = [
             "Certifications / Licenses": { # REQUIRED CERTIFICATIONS OR LICENSES
               "type": "object",
               "properties": {
-                "required": {
+                "measurable": {
                   "type": "boolean",
                   "description": "If the job description states that certifications or licenses are needed, mark this as true.",
                 },
@@ -75,7 +75,7 @@ prompt_li_function = [
             "education":{ # PREFERRED EDUCATION
               "type": "object",
               "properties": {
-                "required": {
+                "measurable": {
                   "type": "boolean",
                   "description": "If the job description states that a certain education is preferred or nice to have, mark this as true.",
                 },
@@ -93,7 +93,7 @@ prompt_li_function = [
             "Experience": { # PREFERRED EXPERIENCE
               "type": "object",
               "properties": {
-                "required": {
+                "measurable": {
                   "type": "boolean",
                   "description": "If the job description states any preferred experience, mark this as true.",
                 },
@@ -111,7 +111,7 @@ prompt_li_function = [
             "Certifications / Licenses": { # PREFERRED CERT OR LICENSES
               "type": "object",
               "properties": {
-                "required": {
+                "measurable": {
                   "type": "boolean",
                   "description": "If the job description states any preferred certifications or licenses, mark this as true.",
                 },
