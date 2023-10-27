@@ -6,8 +6,6 @@ def transform_response(
   job_type
   ):
 
-  os.system('cls')
-
   requirements_table_start = '<p><table class="table"><tr><th>Category</th><th>Score</th><th>Explanation</th></tr>'
   requirements_table_middle = ''
   requirements_table_end = '</table></p>'

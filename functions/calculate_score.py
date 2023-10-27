@@ -7,7 +7,7 @@ from functions.functions_professional import prompt_p_function
 
 
 load_dotenv()
-OPENAI_API_KEY=os.getenv("OPENAI_API_KEY")
+openai.api_key=os.getenv("OPENAI_API_KEY")
 
 def calculate_score(job_description, candidate_resume, job_type): # api call function to chatgpt
 
@@ -45,5 +45,7 @@ def calculate_score(job_description, candidate_resume, job_type): # api call fun
     "name": "json_answer"
   }
   )
-  
+  os.system('cls')
+  print('----------------------USAGE----------------------')
+  print(score_summary['usage'])
   return json.loads(score_summary['choices'][0]['message']['function_call']['arguments']) # Extract the summary text from the response
