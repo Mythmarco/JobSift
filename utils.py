@@ -1,7 +1,10 @@
-import requests
+import os
 import openai
-from openai import OpenAI
-client = OpenAI()
+import requests
+from dotenv import load_dotenv 
+
+load_dotenv()
+openai.api_key=os.getenv("OPENAI_API_KEY")
 
 def fetch_data(job_id, candidate_id):
     # Fetch Job Description
@@ -27,7 +30,7 @@ def calculate_score(job_description, candidate_resume, job_type):
         Light_Industrial_Scoring_Guidelines = f.read()
 
     # Make API call
-    score_summary = client.chat.completions.create(
+    score_summary = openai.ChatCompletion.create(
     model= "gpt-4",
     messages=[
         {"role":"user", "content":"You are an expert recruiting AI.\
