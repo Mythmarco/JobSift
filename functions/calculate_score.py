@@ -1,16 +1,14 @@
 import os
-import openai
+from openai import OpenAI
 import json
 from dotenv import load_dotenv 
 from functions.functions_light_industrial import prompt_li_function
 from functions.functions_professional import prompt_p_function
 
-
 load_dotenv()
-openai.api_key=os.getenv("OPENAI_API_KEY")
+client = OpenAI()
 
 def calculate_score(job_description, candidate_resume, job_type): # api call function to chatgpt
-
   prompt_guidelines = '' # variable to store the rules of the prompt
   prompt_function = []
   if job_type == 'Light Industrial':  # switch to handle the rules of the prompt
@@ -22,7 +20,7 @@ def calculate_score(job_description, candidate_resume, job_type): # api call fun
       prompt_guidelines = f.read()
       prompt_function = prompt_p_function
 
-  score_summary = openai.ChatCompletion.create( # Make API call
+  score_summary = client.chat.completions.create( # Make API call
   model = "gpt-4",
   messages = [
     {"role":"system", "content":"You are an expert recruiting AI.\
@@ -45,7 +43,4 @@ def calculate_score(job_description, candidate_resume, job_type): # api call fun
     "name": "json_answer"
   }
   )
-  os.system('cls')
-  print('----------------------USAGE----------------------')
-  print(score_summary['usage'])
-  return json.loads(score_summary['choices'][0]['message']['function_call']['arguments']) # Extract the summary text from the response
+  return json.loads(score_summary.choices[0].message.function_call.arguments) # Extract the summary text from the response
