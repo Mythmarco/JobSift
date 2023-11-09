@@ -39,6 +39,7 @@ if st.button('Evaluate Resume'):
         # Fetch Job Description and Candidate Resume
         job_description, candidate_resume = fetch_data(job_id, candidate_id)
         
+        
         # Calculate Score and Summary
         score_summary = calculate_score(job_description, candidate_resume, job_type)
         

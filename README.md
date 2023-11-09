@@ -1,7 +1,7 @@
-# <img src="static/rs2.png" width="100" height="100" style="vertical-align: middle;"> BEPC JobSift <i><span style="font-size: 0.8em;">for Recruiters</span></i>
+# <img src="static/rs2.png" width="100" height="100" style="vertical-align: middle;"> BEPC JobSift 2.1<i><span style="font-size: 0.8em;">for Recruiters</span></i>
 
 ## Overview
-The BEPC JobSift is a Streamlit application designed to enhance the resume - Job Description review. It accepts both a JobID and a Resume ID from Bullhorn, and applies a chat completion using gpt 4.0 to provide a rating and a summary of the candidate's viability for the Job Description. The app's backend is built in php and a php connection to bullhorn which we use as an endpoint through a request in python. 
+The BEPC JobSift is a Streamlit application designed to enhance the resume - Job Description review. It accepts both a JobID and a Resume ID from Bullhorn, and applies a chat completion using gpt 4.0 Turbo to provide a rating and a summary of the candidate's viability for the Job Description. The app's backend is built in php and a php connection to bullhorn which we use as an endpoint through a request in python. 
 
 ## Installation
 
@@ -27,7 +27,10 @@ Uses BEPC API connection to Bullhorn to pull Job Description and Candidate Resum
 Compares the two documents and generates a summary of the candidate's viability and the score of the candidate.
 
 ## Note
-This app is not intended to be used for any other purpose than to demonstrate the capabilities of the BEPC API and GPT 3.5. It is not intended to be used in a production environment.
+This app is not intended to be used for any other purpose than to demonstrate the capabilities of the BEPC API and GPT 4 Turbo It is not intended to be used in a production environment.
+
+## Changelog
+This New verison adds seed, for reproducible outputs as per : https://platform.openai.com/docs/guides/text-generation/reproducible-outputs
 
 ## Author
 

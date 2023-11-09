@@ -2,3 +2,4 @@ werkzeug
 requests
 openai
 streamlit
+python-dotenv
