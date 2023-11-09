@@ -19,7 +19,7 @@ st.markdown(
     <div class="container">
         <h2 class="text-center mt-4">
             <img src="data:image/png;base64,{sr2new}" width="50" height="50" class="d-inline-block align-top" alt="">
-            JobSift 2 <span style="font-style: italic; font-size: 17px;">for recruiting</span>
+            JobSift 2.1 <span style="font-style: italic; font-size: 17px;">for recruiting</span>
         </h2>
     </div>
     """,
