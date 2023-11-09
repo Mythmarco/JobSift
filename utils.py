@@ -51,7 +51,6 @@ def calculate_score(job_description, candidate_resume, job_type):
     score_summary = client.chat.completions.create(
     model = "gpt-4-1106-preview",
     seed = Seed,
-    stream=True,
     messages=[
         {"role":"user", "content":"You are an expert recruiting AI.\
          Evaluate how a candidate's resume matches a job description\
