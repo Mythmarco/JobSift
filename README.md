@@ -1,4 +1,4 @@
-# <img src="static/rs2.png" width="100" height="100" style="vertical-align: middle;"> BEPC JobSift 2.1<i><span style="font-size: 0.8em;">for Recruiters</span></i>
+# <img src="static/rs2.png" width="100" height="100" style="vertical-align: middle;"> BEPC JobSift 2.1 <i><span style="font-size: 0.8em;">for Recruiters</span></i>
 
 ## Overview
 The BEPC JobSift is a Streamlit application designed to enhance the resume - Job Description review. It accepts both a JobID and a Resume ID from Bullhorn, and applies a chat completion using gpt 4.0 Turbo to provide a rating and a summary of the candidate's viability for the Job Description. The app's backend is built in php and a php connection to bullhorn which we use as an endpoint through a request in python. 
