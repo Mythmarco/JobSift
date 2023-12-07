@@ -28,8 +28,8 @@ st.markdown(
 
 # User Input via Streamlit widgets
 job_type = st.selectbox('Select Job Type', ['Professional', 'Light Industrial'])
-job_id = st.text_input('1.- Enter the Job ID')
-candidate_id = st.text_input('2.- Enter the Candidate ID')  # Changed 'candidate' to 'candidate_id' for consistency
+job_id = st.text_input('1.- Enter the Job ID','23087')
+candidate_id = st.text_input('2.- Enter the Candidate ID','298853')  # Changed 'candidate' to 'candidate_id' for consistency
 experience = st.text_input('3.- Enter the Candidate Experience')
 keywords = st.text_input('4.- Enter the Keywords')
 

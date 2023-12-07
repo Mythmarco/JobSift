@@ -1,5 +1,4 @@
 import requests
-import os
 
 def fetch_data(job_id, candidate_id): # Fetch Job Description and resume
 
@@ -12,8 +11,5 @@ def fetch_data(job_id, candidate_id): # Fetch Job Description and resume
   data_resume = {"candidate": candidate_id}
   response_resume = requests.post(url_resume, data=data_resume)
   candidate_resume = response_resume.text
-
-  os.system('cls')
-  print(candidate_resume)
 
   return job_description, candidate_resume

@@ -19,6 +19,8 @@ def transform_response(
   additional_counter_req = 0
   additional_counter_pref = 0
 
+  os.system('cls')
+
   if job_type == 'Light Industrial':
     print('----------------REQUIRED ELEMENTS----------------')
     for req_key, req_value in requirements_table.items(): #this first loop is just for the additional counter
